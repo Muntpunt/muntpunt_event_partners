@@ -80,6 +80,7 @@ class CRM_MuntpuntEventPartners_Form_EventPartner extends CRM_Core_Form {
       ->addValue('event_id', $eventId)
       ->addValue('contact_id', $contactId)
       ->addValue('role_id', [$roleId])
+      ->addValue('register_date', date('Y-m-d H:i:s'))
       ->execute();
   }
 
