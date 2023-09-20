@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <path>civicrm/muntpunt-event-partners</path>
+    <page_callback>CRM_MuntpuntEventPartners_Form_EventPartner</page_callback>
+    <title>EventPartner</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
+</menu>
