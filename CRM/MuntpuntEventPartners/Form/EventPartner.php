@@ -106,6 +106,7 @@ class CRM_MuntpuntEventPartners_Form_EventPartner extends CRM_Core_Form {
         'name' => $participant['contact_id.display_name'],
         'role' => implode(', ', $participant['role_id:label']),
         'edit_link' => 'contact/view/participant?reset=1&action=update&id=' . $participant['id'] . '&cid=' . $participant['contact_id'] . '&context=participant',
+        'delete_link' => 'contact/view/participant?reset=1&action=delete&id=' . $participant['id'] . '&cid=' . $participant['contact_id'] . '&context=participant',
       ];
     }
 

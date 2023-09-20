@@ -25,7 +25,7 @@
         <tr>
           <td>{$partner.name}</td>
           <td>{$partner.role}</td>
-          <td><a href="{$partner.edit_link}">Bewerk</a></td>
+          <td><a href="{$partner.edit_link}">Bewerken</a> | <a href="{$partner.delete_link}">Verwijderen</a></td>
         </tr>
       {/foreach}
   </table>
