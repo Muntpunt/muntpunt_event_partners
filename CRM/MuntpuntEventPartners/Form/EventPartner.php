@@ -7,7 +7,7 @@ class CRM_MuntpuntEventPartners_Form_EventPartner extends CRM_Core_Form {
     $eventId = $this->getEventIdFromUrl();
     $event = $this->getEventDetails($eventId);
 
-    $this->setTitle('Beheer organisator en partners van evenement: ' . $event['title']);
+    $this->setTitle('Beheer organisator en partners van evenement: ' . $event['title'] . ' - ' . $event['start_date']);
 
     //$this->addFormElements();
     //$this->addFormButtons();
