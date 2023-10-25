@@ -28,7 +28,7 @@ class CRM_MuntpuntEventPartners_Form_EventPartner extends CRM_Core_Form {
 
   private function addFormElements($eventId) {
     $this->add('hidden', 'event_id', $eventId);
-    $this->addEntityRef('partner_id', 'Contact', ['create => TRUE', 'api' => ['params' => ['contact_type' => 'Organization']]], TRUE);
+    $this->addEntityRef('partner_id', 'Contact', ['create' => TRUE, 'api' => ['params' => ['contact_type' => 'Organization']]], TRUE);
     $this->add('select', 'role_id', 'Rol', [5 => 'Organisator', 6 => 'Partner']);
   }
 
